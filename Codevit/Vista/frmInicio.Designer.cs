@@ -28,20 +28,140 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.msMenus = new System.Windows.Forms.MenuStrip();
+            this.tsmiVentas = new System.Windows.Forms.ToolStripMenuItem();
+            this.tsmiAlmacen = new System.Windows.Forms.ToolStripMenuItem();
+            this.tsmiCompras = new System.Windows.Forms.ToolStripMenuItem();
+            this.tsmiContabilidad = new System.Windows.Forms.ToolStripMenuItem();
+            this.tsmiRecursosHumanos = new System.Windows.Forms.ToolStripMenuItem();
+            this.tsmiSistemas = new System.Windows.Forms.ToolStripMenuItem();
+            this.tsmiSistemasCat = new System.Windows.Forms.ToolStripMenuItem();
+            this.tsmiCatSat = new System.Windows.Forms.ToolStripMenuItem();
+            this.tsmiSatAduanas = new System.Windows.Forms.ToolStripMenuItem();
+            this.tsmiSatFormaPago = new System.Windows.Forms.ToolStripMenuItem();
+            this.tsmiSatMetodoPago = new System.Windows.Forms.ToolStripMenuItem();
+            this.msMenus.SuspendLayout();
             this.SuspendLayout();
             // 
-            // Form1
+            // msMenus
+            // 
+            this.msMenus.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.tsmiVentas,
+            this.tsmiAlmacen,
+            this.tsmiCompras,
+            this.tsmiContabilidad,
+            this.tsmiRecursosHumanos,
+            this.tsmiSistemas});
+            this.msMenus.Location = new System.Drawing.Point(0, 0);
+            this.msMenus.Name = "msMenus";
+            this.msMenus.Size = new System.Drawing.Size(1177, 24);
+            this.msMenus.TabIndex = 0;
+            this.msMenus.Text = "menuStrip1";
+            // 
+            // tsmiVentas
+            // 
+            this.tsmiVentas.Name = "tsmiVentas";
+            this.tsmiVentas.Size = new System.Drawing.Size(53, 20);
+            this.tsmiVentas.Text = "Ventas";
+            // 
+            // tsmiAlmacen
+            // 
+            this.tsmiAlmacen.Name = "tsmiAlmacen";
+            this.tsmiAlmacen.Size = new System.Drawing.Size(66, 20);
+            this.tsmiAlmacen.Text = "Almacen";
+            // 
+            // tsmiCompras
+            // 
+            this.tsmiCompras.Name = "tsmiCompras";
+            this.tsmiCompras.Size = new System.Drawing.Size(67, 20);
+            this.tsmiCompras.Text = "Compras";
+            // 
+            // tsmiContabilidad
+            // 
+            this.tsmiContabilidad.Name = "tsmiContabilidad";
+            this.tsmiContabilidad.Size = new System.Drawing.Size(87, 20);
+            this.tsmiContabilidad.Text = "Contabilidad";
+            // 
+            // tsmiRecursosHumanos
+            // 
+            this.tsmiRecursosHumanos.Name = "tsmiRecursosHumanos";
+            this.tsmiRecursosHumanos.Size = new System.Drawing.Size(121, 20);
+            this.tsmiRecursosHumanos.Text = "Recursos Humanos";
+            // 
+            // tsmiSistemas
+            // 
+            this.tsmiSistemas.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.tsmiSistemasCat});
+            this.tsmiSistemas.Name = "tsmiSistemas";
+            this.tsmiSistemas.Size = new System.Drawing.Size(65, 20);
+            this.tsmiSistemas.Text = "Sistemas";
+            // 
+            // tsmiSistemasCat
+            // 
+            this.tsmiSistemasCat.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.tsmiCatSat});
+            this.tsmiSistemasCat.Name = "tsmiSistemasCat";
+            this.tsmiSistemasCat.Size = new System.Drawing.Size(180, 22);
+            this.tsmiSistemasCat.Text = "Catalogos";
+            // 
+            // tsmiCatSat
+            // 
+            this.tsmiCatSat.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.tsmiSatAduanas,
+            this.tsmiSatFormaPago,
+            this.tsmiSatMetodoPago});
+            this.tsmiCatSat.Name = "tsmiCatSat";
+            this.tsmiCatSat.Size = new System.Drawing.Size(180, 22);
+            this.tsmiCatSat.Text = "SAT";
+            // 
+            // tsmiSatAduanas
+            // 
+            this.tsmiSatAduanas.Name = "tsmiSatAduanas";
+            this.tsmiSatAduanas.Size = new System.Drawing.Size(180, 22);
+            this.tsmiSatAduanas.Text = "Aduanas";
+            // 
+            // tsmiSatFormaPago
+            // 
+            this.tsmiSatFormaPago.Name = "tsmiSatFormaPago";
+            this.tsmiSatFormaPago.Size = new System.Drawing.Size(180, 22);
+            this.tsmiSatFormaPago.Text = "Formas de Pago";
+            // 
+            // tsmiSatMetodoPago
+            // 
+            this.tsmiSatMetodoPago.Name = "tsmiSatMetodoPago";
+            this.tsmiSatMetodoPago.Size = new System.Drawing.Size(180, 22);
+            this.tsmiSatMetodoPago.Text = "Metodo de Pago";
+            // 
+            // frmInicio
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(741, 549);
-            this.Name = "Form1";
+            this.ClientSize = new System.Drawing.Size(1177, 578);
+            this.Controls.Add(this.msMenus);
+            this.MainMenuStrip = this.msMenus;
+            this.Name = "frmInicio";
             this.Text = "Form1";
+            this.msMenus.ResumeLayout(false);
+            this.msMenus.PerformLayout();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
         #endregion
+
+        private System.Windows.Forms.MenuStrip msMenus;
+        private System.Windows.Forms.ToolStripMenuItem tsmiVentas;
+        private System.Windows.Forms.ToolStripMenuItem tsmiAlmacen;
+        private System.Windows.Forms.ToolStripMenuItem tsmiCompras;
+        private System.Windows.Forms.ToolStripMenuItem tsmiContabilidad;
+        private System.Windows.Forms.ToolStripMenuItem tsmiRecursosHumanos;
+        private System.Windows.Forms.ToolStripMenuItem tsmiSistemas;
+        private System.Windows.Forms.ToolStripMenuItem tsmiSistemasCat;
+        private System.Windows.Forms.ToolStripMenuItem tsmiCatSat;
+        private System.Windows.Forms.ToolStripMenuItem tsmiSatAduanas;
+        private System.Windows.Forms.ToolStripMenuItem tsmiSatFormaPago;
+        private System.Windows.Forms.ToolStripMenuItem tsmiSatMetodoPago;
     }
 }
 
