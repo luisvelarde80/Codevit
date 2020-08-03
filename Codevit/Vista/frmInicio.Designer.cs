@@ -40,6 +40,11 @@
             this.tsmiSatAduanas = new System.Windows.Forms.ToolStripMenuItem();
             this.tsmiSatFormaPago = new System.Windows.Forms.ToolStripMenuItem();
             this.tsmiSatMetodoPago = new System.Windows.Forms.ToolStripMenuItem();
+            this.tsmiSatMoneda = new System.Windows.Forms.ToolStripMenuItem();
+            this.tsmiSatProductoServicio = new System.Windows.Forms.ToolStripMenuItem();
+            this.tsmiSatRegimenFiscal = new System.Windows.Forms.ToolStripMenuItem();
+            this.tsmiSatTipoRelacion = new System.Windows.Forms.ToolStripMenuItem();
+            this.tsmiSatUsoCfdi = new System.Windows.Forms.ToolStripMenuItem();
             this.msMenus.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -109,7 +114,12 @@
             this.tsmiCatSat.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.tsmiSatAduanas,
             this.tsmiSatFormaPago,
-            this.tsmiSatMetodoPago});
+            this.tsmiSatMetodoPago,
+            this.tsmiSatMoneda,
+            this.tsmiSatProductoServicio,
+            this.tsmiSatRegimenFiscal,
+            this.tsmiSatTipoRelacion,
+            this.tsmiSatUsoCfdi});
             this.tsmiCatSat.Name = "tsmiCatSat";
             this.tsmiCatSat.Size = new System.Drawing.Size(180, 22);
             this.tsmiCatSat.Text = "SAT";
@@ -119,18 +129,53 @@
             this.tsmiSatAduanas.Name = "tsmiSatAduanas";
             this.tsmiSatAduanas.Size = new System.Drawing.Size(180, 22);
             this.tsmiSatAduanas.Text = "Aduanas";
+            this.tsmiSatAduanas.Click += new System.EventHandler(this.tsmiSatAduanas_Click);
             // 
             // tsmiSatFormaPago
             // 
             this.tsmiSatFormaPago.Name = "tsmiSatFormaPago";
             this.tsmiSatFormaPago.Size = new System.Drawing.Size(180, 22);
             this.tsmiSatFormaPago.Text = "Formas de Pago";
+            this.tsmiSatFormaPago.Click += new System.EventHandler(this.tsmiSatFormaPago_Click);
             // 
             // tsmiSatMetodoPago
             // 
             this.tsmiSatMetodoPago.Name = "tsmiSatMetodoPago";
             this.tsmiSatMetodoPago.Size = new System.Drawing.Size(180, 22);
             this.tsmiSatMetodoPago.Text = "Metodo de Pago";
+            this.tsmiSatMetodoPago.Click += new System.EventHandler(this.tsmiSatMetodoPago_Click);
+            // 
+            // tsmiSatMoneda
+            // 
+            this.tsmiSatMoneda.Name = "tsmiSatMoneda";
+            this.tsmiSatMoneda.Size = new System.Drawing.Size(180, 22);
+            this.tsmiSatMoneda.Text = "Moneda";
+            this.tsmiSatMoneda.Click += new System.EventHandler(this.tsmiSatMoneda_Click);
+            // 
+            // tsmiSatProductoServicio
+            // 
+            this.tsmiSatProductoServicio.Name = "tsmiSatProductoServicio";
+            this.tsmiSatProductoServicio.Size = new System.Drawing.Size(180, 22);
+            this.tsmiSatProductoServicio.Text = "Producto Servicio";
+            this.tsmiSatProductoServicio.Click += new System.EventHandler(this.tsmiSatProductoServicio_Click);
+            // 
+            // tsmiSatRegimenFiscal
+            // 
+            this.tsmiSatRegimenFiscal.Name = "tsmiSatRegimenFiscal";
+            this.tsmiSatRegimenFiscal.Size = new System.Drawing.Size(180, 22);
+            this.tsmiSatRegimenFiscal.Text = "Regimen Fiscal";
+            // 
+            // tsmiSatTipoRelacion
+            // 
+            this.tsmiSatTipoRelacion.Name = "tsmiSatTipoRelacion";
+            this.tsmiSatTipoRelacion.Size = new System.Drawing.Size(180, 22);
+            this.tsmiSatTipoRelacion.Text = "Tipo Relación";
+            // 
+            // tsmiSatUsoCfdi
+            // 
+            this.tsmiSatUsoCfdi.Name = "tsmiSatUsoCfdi";
+            this.tsmiSatUsoCfdi.Size = new System.Drawing.Size(180, 22);
+            this.tsmiSatUsoCfdi.Text = "Uso CFDI";
             // 
             // frmInicio
             // 
@@ -138,9 +183,11 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1177, 578);
             this.Controls.Add(this.msMenus);
+            this.IsMdiContainer = true;
             this.MainMenuStrip = this.msMenus;
             this.Name = "frmInicio";
-            this.Text = "Form1";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Codevit";
             this.msMenus.ResumeLayout(false);
             this.msMenus.PerformLayout();
             this.ResumeLayout(false);
@@ -162,6 +209,11 @@
         private System.Windows.Forms.ToolStripMenuItem tsmiSatAduanas;
         private System.Windows.Forms.ToolStripMenuItem tsmiSatFormaPago;
         private System.Windows.Forms.ToolStripMenuItem tsmiSatMetodoPago;
+        private System.Windows.Forms.ToolStripMenuItem tsmiSatMoneda;
+        private System.Windows.Forms.ToolStripMenuItem tsmiSatProductoServicio;
+        private System.Windows.Forms.ToolStripMenuItem tsmiSatRegimenFiscal;
+        private System.Windows.Forms.ToolStripMenuItem tsmiSatTipoRelacion;
+        private System.Windows.Forms.ToolStripMenuItem tsmiSatUsoCfdi;
     }
 }
 
